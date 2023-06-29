@@ -17,7 +17,7 @@ export function Home(){
     },[index])
 
     return(
-        <div className="bg-bg-mobile min-h-screen bg-no-repeat bg-cover ">
+        <div className="bg-bg-mobile min-h-screen bg-no-repeat bg-cover">
             <nav className="flex justify-between items-center mx-6 py-6 ">
                 <img src="images/shared/logo.svg" alt="logo" />
                 <img className = "self-center" src="images/shared/icon-hamburger.svg" />
