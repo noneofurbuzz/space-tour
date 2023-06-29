@@ -21,8 +21,8 @@ export default {
         "height" : "height 1 2s ease-in-out"
         },
       backgroundImage : {
-        "stars" : "url('images/stars.gif')",
-        "bg-mobile" : "url('images/home/background-home-mobile.jpg')"
+        "stars" : "url('public/images/stars.gif')",
+        "bg-mobile" : "url('public/images/home/background-home-mobile.jpg')"
       },
       fontFamily : {
         "barlow" : ["barlow","sans"],
