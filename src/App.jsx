@@ -33,8 +33,8 @@ useEffect(() => {
 
   return (
     <div>
-    <div className={`${path} min-h-screen bg-no-repeat bg-cover bg-dark-gray`}>
-    {location.pathname != "/" && <Navbar /> }
+    <div className={`${path} min-h-screen h-full bg-no-repeat bg-cover bg-dark-gray`}>
+    {location.pathname != "/" && <Navbar/> }
     <Routes>
     <Route path="/" element = {<Loader />} />
     <Route path="/home" element = {<Home />} />

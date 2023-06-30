@@ -24,6 +24,7 @@ export default {
       },
       colors : {
         "light-gray" : "#D0D6F9",
+        "white-1" : "hsla(0, 100%, 100%,0.1)",
         "dark-black" : "#0B0D17",
         "dark-gray" : "hsla(0,0%,59%,0.2)",
         "dark-gray-1" : "hsla(0,0%,59%,0.1)"
@@ -45,6 +46,9 @@ export default {
       },
       borderWidth:{
         "0.5" : "1px"
+      },
+      screens:{
+        "xs": "580px"
       }
     
       }
