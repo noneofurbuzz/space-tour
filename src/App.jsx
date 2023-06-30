@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/home")
-    },7700);
+    },5000);
     return () => clearTimeout(timer);
   })
 
@@ -26,7 +26,7 @@ useEffect(() => {
   else if (location.pathname == "/crew"){
     setPath("crew")
   }
-  else {
+  else if (location.pathname == "/technology"){
     setPath("technology")
   }
 },[location])

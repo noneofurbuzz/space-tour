@@ -13,9 +13,6 @@ export default {
           "100%" : {bottom : "100%"}
         },
       },
-      animation : {
-        "move" : "up 1 7.9s ease-in-out"
-        },
       backgroundImage : {
         "stars" : "url('/images/stars.gif')",
         "bg-mobile" : "url('/images/home/background-home-mobile.jpg')"

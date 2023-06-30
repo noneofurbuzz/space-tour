@@ -196,35 +196,9 @@
           opacity: 1;
         }
       }
-
- @-webkit-keyframes tracking-out-contract {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 1;
-        }
-        100% {
-          letter-spacing: -0.5em;
-          opacity: 0;
-        }
-      }
-      @keyframes tracking-out-contract {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 1;
-        }
-        100% {
-          letter-spacing: -0.5em;
-          opacity: 0;
-        }
-      }
-
 .tracking-in-expand {
-	-webkit-animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
-	 animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
+	-webkit-animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	 animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
 }
  @-webkit-keyframes fade-in {
         0% {
