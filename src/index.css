@@ -122,8 +122,15 @@
 .bounce-in-left {
 	animation: bounce-in-left 1.1s 4.5s both;
 }
+.parent{
+        backface-visibility: hidden;
+}
+.parent .button{
+        backface-visibility: hidden;
+}
 .parent:hover{
         scale:1.5;
+
 }
 .parent:hover .button{
         scale:0.67;
@@ -132,5 +139,151 @@
         scale:1.5;
 }
 .parent:active .button{
-        scale:0.666666666667;
+        scale:0.67;
 }
+
+
+
+@-webkit-keyframes fade-in-fwd {
+        0% {
+          -webkit-transform: translateZ(-80px);
+                  transform: translateZ(-80px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in-fwd {
+        0% {
+          -webkit-transform: translateZ(-80px);
+                  transform: translateZ(-80px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+.fade-in-fwd {
+	-webkit-animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}  
+ @-webkit-keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-expand {
+        0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+ @-webkit-keyframes tracking-out-contract {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+      }
+      @keyframes tracking-out-contract {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+        }
+      }
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
+	 animation: tracking-in-expand 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
+}
+ @-webkit-keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+ .fade-in {
+	-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.home{
+        background-image: url("/images/home/background-home-mobile.jpg");
+}
+.destination{
+        background-image: url("/images/destination/background-destination-mobile.jpg");
+}
+.technology{
+        background-image: url("/images/technology/background-technology-mobile.jpg");
+}
+.crew{
+        background-image: url("/images/crew/background-crew-mobile.jpg");
+}
+@media (min-width : 640px){
+        .home{
+                background-image: url("/images/home/background-home-tablet.jpg");
+        }
+        .destination{
+                background-image: url("/images/destination/background-destination-tablet.jpg");
+        }
+        .technology{
+                background-image: url("/images/technology/background-technology-tablet.jpg");
+        }
+        .crew{
+                background-image: url("/images/crew/background-crew-tablet.jpg");
+        }
+}
+@media (min-width : 1024px){
+        .home{
+                background-image: url("/images/home/background-home-desktop.jpg");
+        }
+        .destination{
+                background-image: url("/images/destination/background-destination-desktop.jpg");
+        }
+        .technology{
+                background-image: url("/images/technology/background-technology-desktop.jpg");
+        }
+        .crew{
+                background-image: url("/images/crew/background-crew-desktop.jpg");
+        }
+}
+

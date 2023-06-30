@@ -7,18 +7,14 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        up:{
+      up:{
           "0%" : {bottom : "0%"},
-          "100%" : {bottom : "100%"},
+          "50%" : {bottom : "43.4%"},
+          "100%" : {bottom : "100%"}
         },
-        height : {
-          "0%" : {height : "14rem",width:"14rem",},
-          "100%" : {height : "14rem",width : "14rem" }
-        }
       },
       animation : {
-        "move" : "up infinite 5s ease-in-out",
-        "height" : "height 1 2s ease-in-out"
+        "move" : "up 1 7.9s ease-in-out"
         },
       backgroundImage : {
         "stars" : "url('/images/stars.gif')",
@@ -32,15 +28,28 @@ export default {
       colors : {
         "light-gray" : "#D0D6F9",
         "dark-black" : "#0B0D17",
-        "dark-gray" : "hsla(0,0%,59%,0.2)"
+        "dark-gray" : "hsla(0,0%,59%,0.2)",
+        "dark-gray-1" : "hsla(0,0%,59%,0.1)"
       },
       fontSize : {
         "7xl": "5rem",
-        "xl-1" : "1.25rem"
+        "xl-1" : "1.25rem",
+        "8xl" : "9.375rem"
       },
       scale : {
         "80" : "0.8"
+      },
+      width :{
+        "100" : "28rem",
+        "71" : "17rem"
+      },
+      height:{
+        "71" : "17rem"
+      },
+      borderWidth:{
+        "0.5" : "1px"
       }
+    
       }
     },
   plugins: [],
