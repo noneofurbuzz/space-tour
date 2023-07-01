@@ -27,7 +27,8 @@ export default {
         "white-1" : "hsla(0, 100%, 100%,0.1)",
         "dark-black" : "#0B0D17",
         "dark-gray" : "hsla(0,0%,59%,0.2)",
-        "dark-gray-1" : "hsla(0,0%,59%,0.1)"
+        "dark-gray-1" : "hsla(0,0%,59%,0.1)",
+        "gray" :"#979797"
       },
       fontSize : {
         "7xl": "5rem",

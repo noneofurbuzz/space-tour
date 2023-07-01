@@ -15,6 +15,7 @@
     src: url("/fonts/barlow-reg/Barlow-Regular.ttf");
 }
 
+
  @-webkit-keyframes slide-in-right {
         0% {
           -webkit-transform: translateX(1000px);
