@@ -15,7 +15,7 @@ useEffect(() => {
   if (location.pathname == "/home"){
     setPath("home")
   }
-  else if (location.pathname == "/destination"){
+  else if ((location.pathname.includes("/destination"))){
     setPath("destination")
   }
   else if (location.pathname == "/crew"){
@@ -33,7 +33,7 @@ useEffect(() => {
     <Routes>
     <Route path="/" element = {<Loader />} />
     <Route path="/home" element = {<Home />} />
-    <Route path = "/destination" element = {<Destination />} />
+    <Route path="/destination/:planet" element = {<Destination />} />
     </Routes>
     </div>
     </div>
