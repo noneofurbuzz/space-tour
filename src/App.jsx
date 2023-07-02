@@ -33,7 +33,9 @@ useEffect(() => {
     <Routes>
     <Route path="/" element = {<Loader />} />
     <Route path="/home" element = {<Home />} />
-    <Route path="/destination/:planet" element = {<Destination />} />
+    <Route path = "/destination" element = {<Destination />}>
+      <Route path=":planet" element = {<Destination />} />
+    </Route>
     </Routes>
     </div>
     </div>
