@@ -4,6 +4,7 @@ import { useEffect, useState} from "react"
 import { Loader } from "./pages/Loader"
 import { Destination } from "./pages/Destination"
 import { Navbar } from "./components/Navbar"
+import { Crew } from "./pages/Crew"
 function App() {
 
   
@@ -18,7 +19,7 @@ useEffect(() => {
   else if ((location.pathname.includes("/destination"))){
     setPath("destination")
   }
-  else if (location.pathname == "/crew"){
+  else if (location.pathname.includes("/crew")){
     setPath("crew")
   }
   else if (location.pathname == "/technology"){
@@ -35,6 +36,9 @@ useEffect(() => {
     <Route path="/home" element = {<Home />} />
     <Route path = "/destination" element = {<Destination />}>
       <Route path=":planet" element = {<Destination />} />
+    </Route>
+    <Route path="/crew" element = {<Crew />} >
+      <Route path=":crew" element = {<Crew />} />
     </Route>
     </Routes>
     </div>

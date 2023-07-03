@@ -16,7 +16,7 @@ export function Navbar(){
       else if (location.pathname.includes("/destination")){
         setPath("destination")
       }
-      else if (location.pathname == "/crew"){
+      else if (location.pathname.includes("/crew")){
         setPath("crew")
       }
       else if (location.pathname == "/technology"){
@@ -31,7 +31,7 @@ export function Navbar(){
           <ul onClick={() => setShow(false)} className="text-base font-barlow text-white mt-[118px] tracking-[0.16875em] ml-9">
             <Link to="/home" ><li className="mb-8"><span className="font-bold mr-3">00</span>HOME</li></Link>
             <Link to= "/destination/Moon" ><li className="mb-8"><span className="font-bold mr-3">01</span>DESTINATION</li></Link>
-            <Link to="/crew" ><li className="mb-8"><span className="font-bold mr-3">02</span>CREW</li></Link>
+            <Link to="/crew/Douglas" ><li className="mb-8"><span className="font-bold mr-3">02</span>CREW</li></Link>
             <Link to="/technology"><li className=""><span className="font-bold mr-3">03</span>TECHNOLOGY</li></Link>
           </ul>
           </div>}
@@ -43,7 +43,7 @@ export function Navbar(){
             
             <Link to="/destination/Moon" className="group mr-8 cursor-pointer"><span className="hidden mr-3 lg:inline font-bold">01</span>DESTINATION<div className={`${path == "destination" ? "border-white visible" : "border-transparent"} duration-500 border-b-4 group-hover:border-gray w-[5.3rem] lg:w-[8.1rem] top-[5.95rem] absolute lg:top-[6.2rem]`}></div></Link>
             
-            <Link to="/crew" className="group mr-8 cursor-pointer"><span className="hidden mr-3 lg:inline font-bold">02</span>CREW<div className={`${path == "crew" ? "border-white visible" : "border-transparent"} border-b-4 group-hover:border-gray w-[2.1rem] lg:w-[4.6rem] duration-500 top-[5.95rem] absolute lg:top-[6.2rem]`}></div></Link>
+            <Link to="/crew/Douglas" className="group mr-8 cursor-pointer"><span className="hidden mr-3 lg:inline font-bold">02</span>CREW<div className={`${path == "crew" ? "border-white visible" : "border-transparent"} border-b-4 group-hover:border-gray w-[2.1rem] lg:w-[4.6rem] duration-500 top-[5.95rem] absolute lg:top-[6.2rem]`}></div></Link>
             
             <Link to="/technology" className="group cursor-pointer"><span className="hidden mr-3 lg:inline font-bold">03</span>TECHNOLOGY<div className={`${path == "technology" ? "border-white visible" : "border-transparent"} border-b-4 group-hover:border-gray duration-500 top-[5.95rem] w-[5.2rem] lg:w-[8.1rem] absolute lg:top-[6.2rem]`}></div></Link>
           </ul>
