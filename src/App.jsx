@@ -5,6 +5,7 @@ import { Loader } from "./pages/Loader"
 import { Destination } from "./pages/Destination"
 import { Navbar } from "./components/Navbar"
 import { Crew } from "./pages/Crew"
+import { Technology } from "./pages/Technology"
 function App() {
 
   
@@ -22,7 +23,7 @@ useEffect(() => {
   else if (location.pathname.includes("/crew")){
     setPath("crew")
   }
-  else if (location.pathname == "/technology"){
+  else if (location.pathname.includes("/technology")){
     setPath("technology")
   }
 },[location])
@@ -39,6 +40,9 @@ useEffect(() => {
     </Route>
     <Route path="/crew" element = {<Crew />} >
       <Route path=":crew" element = {<Crew />} />
+    </Route>
+    <Route path="/technology" element = {<Technology />} >
+      <Route path=":technology" element = {<Technology />} />
     </Route>
     </Routes>
     </div>

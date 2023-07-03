@@ -194,7 +194,7 @@
     }
 }
 .bounce-in-left {
-	animation: bounce-in-left 1.1s 4.5s both;
+	animation: bounce-in-left 1.1s 4s both;
 }
 
 @-webkit-keyframes fade-in-fwd {

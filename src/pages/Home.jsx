@@ -11,7 +11,7 @@ export function Home(){
             setTimeout(() => {
                 setText(text + fullText[index])
                 setIndex(index + 1)
-            },150)
+            },120)
         }
         
     },[index])

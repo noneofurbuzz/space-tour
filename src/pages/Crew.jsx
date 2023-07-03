@@ -20,8 +20,8 @@ export function Crew(){
                             <div className="flex flex-col items-center mt-7 lg:items-start">
                                 {window.innerWidth >= 1024 && <p className="font-barlow text-base text-white tracking-[0.16875em] text-center xs:text-left xs:mx-9 xs:mt-10 xs:text-xl lg:mx-0 lg:text-[1.75rem] lg:relative bottom-20"><span className="text-gray font-bold mr-4">02</span>MEET YOUR CREW</p>}
                                 <p className="font-belle text-base uppercase text-gray xs:text-2xl xs:mt-6  lg:text-3xl">{filteredCrew.role}</p>
-                                <p className="uppercase mt-2 xs:text-[2.5rem] text-white font-belle text-2xl xs:mt-4 lg:text-5xl">{filteredCrew.name}</p>
-                                <p className="text-reg mx-4 mt-4 pb-10 text-center xs:text-base lg:text-left text-[#D0D6F9] text-[0.9375rem] xs:w-[32rem] xs:leading-7 leading-6 lg:leading-8 xs:mt-6 lg:mx-0 ">{filteredCrew.bio}</p>
+                                <p className="uppercase mt-2 xs:text-[2.5rem] text-white font-belle text-2xl xs:mt-4 lg:text-5xl wor">{filteredCrew.name}</p>
+                                <p className="font-reg mx-4 mt-4 pb-10 text-center xs:text-base lg:text-left text-[#D0D6F9] text-[0.9375rem] xs:w-[32rem] xs:leading-7 lg:text-lg leading-6 lg:leading-8 xs:mt-6 lg:mx-0 ">{filteredCrew.bio}</p>
                             </div>
                         </div>
                     </div>
